@@ -1,13 +1,14 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Thing } from '../.';
+import { ChakraProvider } from '@chakra-ui/react';
+import PillPity from '../.';
 
 const App = () => {
   return (
-    <div>
-      <Thing />
-    </div>
+    <ChakraProvider>
+      <PillPity bg="red.400" h="150px" patFill="blue"></PillPity>
+    </ChakraProvider>
   );
 };
 

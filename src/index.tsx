@@ -1,6 +1,3 @@
-import * as React from 'react';
+export * from './pill-pity';
 
-// Delete me
-export const Thing = () => {
-  return <div>the snozzberries taste like snozzberries</div>;
-};
+export { PillPity as default } from './pill-pity';
