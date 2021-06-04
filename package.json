@@ -20,6 +20,7 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
+    "@chakra-ui/react": ">=1.6.2",
     "react": ">=16"
   },
   "husky": {
@@ -35,6 +36,10 @@
   },
   "name": "pill-pity",
   "author": "anubra266",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubra266/pill-pity.git"
+  },
   "module": "dist/pill-pity.esm.js",
   "size-limit": [
     {
