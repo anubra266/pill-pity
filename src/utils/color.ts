@@ -13,5 +13,5 @@ export const useParseColor = (_color: string) => {
   const [tokenToHexColor] = useToken('colors', [_color]);
   if (isChakraToken) return tokenToHexColor;
 
-  //   return _color;
+  return _color;
 };

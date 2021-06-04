@@ -7,7 +7,7 @@ import PillPity from '../.';
 const App = () => {
   return (
     <ChakraProvider>
-      <PillPity pattern="topography" p="48" color="blue" pill="green.800">
+      <PillPity pattern="topography" p="48" color="blue">
         I am a Box with Pattern
       </PillPity>
     </ChakraProvider>

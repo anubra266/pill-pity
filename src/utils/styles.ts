@@ -4,8 +4,8 @@ import { patterns } from './patterns';
 import { getFill, getOpacity } from './props';
 
 const DEFAULT_OPACITY = 0.4;
-const DEFAULT_FILL = '#9c92ac';
-const DEFAULT_BACKGROUND = '#dfdbe5';
+const DEFAULT_FILL = 'gray.600';
+const DEFAULT_BACKGROUND = 'gray.100';
 
 /**
  * Generate Hero Pattern Props
@@ -14,7 +14,7 @@ const DEFAULT_BACKGROUND = '#dfdbe5';
  */
 export const usePatternStyles = (props: Required<PillPityProps>) => {
   const { pattern } = props;
-
+  console.log(Object.keys(patterns));
   const template = patterns[pattern];
   const opacity = getOpacity(props) || DEFAULT_OPACITY;
   const _fill = getFill(props) || DEFAULT_FILL;
