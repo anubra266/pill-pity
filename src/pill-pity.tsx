@@ -19,6 +19,5 @@ export interface PillPityProps extends BoxProps {
 export const PillPity = (props: PillPityProps) => {
   const rest = extractProps(props);
   const patternStyles = usePatternStyles(props as any);
-
   return <Box {...patternStyles} {...rest} />;
 };
