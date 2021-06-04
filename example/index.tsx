@@ -7,7 +7,9 @@ import PillPity from '../.';
 const App = () => {
   return (
     <ChakraProvider>
-      <PillPity bg="red.400" h="150px" patFill="blue"></PillPity>
+      <PillPity pattern="topography" p="48" color="blue" pill="green.800">
+        I am a Box with Pattern
+      </PillPity>
     </ChakraProvider>
   );
 };

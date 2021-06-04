@@ -1,8 +1,11 @@
 import { Box, BoxProps } from '@chakra-ui/react';
 import React from 'react';
+import { Pattern } from './utils/patterns';
 import { extractProps } from './utils/props';
+import { usePatternStyles } from './utils/styles';
 
 export interface PillPityProps extends BoxProps {
+  pattern?: Pattern;
   // fill
   patternFill?: string;
   patFill?: string;
@@ -15,5 +18,8 @@ export interface PillPityProps extends BoxProps {
 
 export const PillPity = (props: PillPityProps) => {
   const rest = extractProps(props);
-  return <Box {...rest}>wow</Box>;
+  const patternStyles = usePatternStyles(props as any);
+  console.log('patternStyles :>> ', patternStyles);
+
+  return <Box {...patternStyles} {...rest} />;
 };
