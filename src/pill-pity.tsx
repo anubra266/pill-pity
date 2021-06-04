@@ -1,4 +1,4 @@
-import { Box, BoxProps } from '@chakra-ui/react';
+import { Box, BoxProps, forwardRef } from '@chakra-ui/react';
 import React from 'react';
 import { Pattern } from './utils/patterns';
 import { extractProps } from './utils/props';
@@ -16,8 +16,8 @@ export interface PillPityProps extends BoxProps {
   pity?: number;
 }
 
-export const PillPity = (props: PillPityProps) => {
+export const PillPity = forwardRef<PillPityProps, 'div'>((props, ref) => {
   const rest = extractProps(props);
   const patternStyles = usePatternStyles(props as any);
-  return <Box {...patternStyles} {...rest} />;
-};
+  return <Box {...patternStyles} {...rest} ref={ref} />;
+});

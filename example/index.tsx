@@ -7,6 +7,7 @@ import {
   Flex,
   SimpleGrid,
   useColorModeValue,
+  Box,
 } from '@chakra-ui/react';
 
 import PillPity, { Pattern } from '../.';
@@ -120,6 +121,9 @@ const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <SimpleGrid columns={[1, 1, 2, 4]} spacing="40px" w="full">
+        <Box as={Flex} align="center">
+          ss
+        </Box>
         {patterns.map((pattern: Pattern) => (
           <PillPity
             key={pattern}
@@ -132,6 +136,7 @@ const App = () => {
             patternFill={useColorModeValue('brand.200', 'brand.400')}
             color="brand.800"
             patternOpacity={0.2}
+            
           >
             {pattern}
           </PillPity>
