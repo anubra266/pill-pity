@@ -122,6 +122,7 @@ const App = () => {
       <SimpleGrid columns={[1, 1, 2, 4]} spacing="40px" w="full">
         {patterns.map((pattern: Pattern) => (
           <PillPity
+            key={pattern}
             pattern={pattern}
             as={Flex}
             align="center"
@@ -130,7 +131,7 @@ const App = () => {
             boxSize="200px"
             patternFill={useColorModeValue('brand.200', 'brand.400')}
             color="brand.800"
-            patternOpacity={0}
+            patternOpacity={0.2}
           >
             {pattern}
           </PillPity>

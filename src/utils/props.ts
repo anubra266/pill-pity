@@ -1,5 +1,5 @@
 import { PillPityProps } from '../pill-pity';
-import { isEmpty } from '@chakra-ui/utils';
+import { isEmpty, isDefined, isNumber } from '@chakra-ui/utils';
 
 export const extractProps = (props: PillPityProps) => {
   const extractedProps = Object.entries(props)
@@ -13,7 +13,7 @@ export const getOpacity = (props: PillPityProps) => {
   const opacityProps = Object.entries(props)
     .filter(([prop]) => patternOpacityProps.includes(prop))
     //get the defined props
-    .filter(isValidProp);
+    .filter(([_, value]: any) => isNumber(value));
   return lastEntry(opacityProps);
 };
 
@@ -22,11 +22,9 @@ export const getFill = (props: PillPityProps) => {
   const fillProps = Object.entries(props)
     .filter(([prop]) => patternFillProps.includes(prop))
     //filter the defined props
-    .filter(isValidProp);
+    .filter(([_, value]: any) => isDefined(value));
   return lastEntry(fillProps);
 };
-
-const isValidProp = ([_, value]: any) => !!value;
 
 // get latest entry if multiple props are entered, e.g. `pill` and `patFill`
 const lastEntry = (entries: any[]) =>
