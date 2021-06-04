@@ -1,4 +1,5 @@
 import { useTheme, useToken } from '@chakra-ui/react';
+import Color from 'tinycolor2';
 
 /**
  * transform the color token or css value
@@ -7,11 +8,11 @@ import { useTheme, useToken } from '@chakra-ui/react';
  */
 export const useParseColor = (_color: string) => {
   const theme = useTheme();
-
+  // convert chakra color tokens to hex
   const key = `colors.${_color}`;
   const isChakraToken = key in theme.__cssMap;
   const [tokenToHexColor] = useToken('colors', [_color]);
   if (isChakraToken) return tokenToHexColor;
-
-  return _color;
+  // convert other color formats to hex
+  return Color(_color).toHexString();
 };

@@ -14,7 +14,7 @@
     <a href="https://www.npmjs.com/package/pill-pity?style=for-the-badge">
        <img src="https://img.shields.io/npm/v/pill-pity.svg?style=for-the-badge" alt="npm package" />
     </a>
-    <a href="https://www.npmjs.com/package/pill-pity?style=for-the-badge">
+    <a href="https://www.npmjs.com/package/pill-pity?style=for-the-badge"> 
       <img src="https://img.shields.io/npm/dw/pill-pity.svg?style=for-the-badge" alt="npm  downloads" />
     </a>
 <a>
@@ -95,11 +95,11 @@ export default () => {
 
 ### Props Reference
 
-| Prop           | Description                                 | Default        |
-| -------------- | ------------------------------------------- | -------------- |
-| pattern        | The Hero Pattern to be applied              | &mdash;&mdash; |
-| patternFill    | The foreground color applied to the pattern | `gray.600`     |
-| patternOpacity | The opacity of the pattern foreground       | 0.4            |
+| Prop           | Description                                                                                                                           | Default        |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| pattern        | The Hero Pattern to be applied                                                                                                        | &mdash;&mdash; |
+| patternFill    | The foreground color applied to the pattern. It accepts all color formats; `hsl`, `rgb`, `hex`, you name it, plus chakra color tokens | `gray.600`     |
+| patternOpacity | The opacity of the pattern foreground                                                                                                 | 0.4            |
 
 You should apply a `bgColor` to complement the pattern. If none is applied, the default is `gray.100`
 
