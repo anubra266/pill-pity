@@ -57,7 +57,7 @@ But you know how [Chakra UI](https://chakra-ui.com) makes life easy, and you do 
 
 So I added short form props; `patFill` and `patOpacity`. Well then I thought, that's not enough, Let's just make it *easiest*🙃 after all.
 
-Trust me you're not seeing yet. But damn, I'm the laziest thing I know, so I said "tune it up", just a little more, and it became `pill` and `pity`😂
+Trust me you're not seeing it yet. But damn, I'm the laziest thing I know, so I said "tune it up", just a little more, and it became `pill` and `pity`😂
 And there it was; the name staring back at me.✨
 
 I hope you enjoyed the story, but all I was trying to say is; **all six props are accepted**. And they override themselves in the order they are provided.
