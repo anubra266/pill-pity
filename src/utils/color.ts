@@ -1,5 +1,5 @@
 import { useTheme, useToken } from '@chakra-ui/react';
-import Color from 'tinycolor2';
+import Color from '@ctrl/tinycolor';
 
 /**
  * transform the color token or css value
