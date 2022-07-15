@@ -109,7 +109,7 @@ You should apply a `bgColor` to complement the pattern. If none is applied, the 
 
 The available patterns.
 
-Preview them [Here](https://choc-ui.tech/docs/packages/pill-pity)
+Preview them [Here](https://choc-ui.com/docs/packages/pill-pity)
 
 ```js
 [
